@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Outfit', sans-serif;
+   min-height: 100vh;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: hsl(212, 45%, 89%);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#container .qr-code{
+    height: 300px;
+    width: 300px;
+}
+
+#container .qr-code img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#container .heading{
+    width: 260px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container .heading h2{
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+#container .content{
+    width: 250px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#container .content p{
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    #container{
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width:601px) {
+    #container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
